@@ -1,8 +1,8 @@
 <?php
 
-require_once __DIR__ . "/../core/Controller.php";
+require_once __DIR__ . "/../core/controller.php";
 require_once __DIR__ . "/../DAO/habitacionDAO.php";
-require_once __DIR__ . "/../core/Database.php";
+require_once __DIR__ . "/../core/dataBase.php";
 
 class AdminController extends Controller {
 
