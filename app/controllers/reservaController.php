@@ -1,10 +1,10 @@
 <?php
 
-require_once __DIR__ . "/../core/Controller.php";
-require_once __DIR__ . "/../services/ReservaService.php";
+require_once __DIR__ . "/../core/controller.php";
+require_once __DIR__ . "/../services/reservaService.php";
 require_once __DIR__ . "/../services/ReniecService.php";
-require_once __DIR__ . "/../DAO/PersonaDAO.php";
-require_once __DIR__ . "/../core/Database.php";
+require_once __DIR__ . "/../DAO/personaDAO.php";
+require_once __DIR__ . "/../core/dataBase.php";
 require_once __DIR__ . "/../services/ReniecService.php";
 
 
@@ -142,8 +142,8 @@ class ReservaController extends Controller {
 
         $conn = Database::getInstance();
 
-        require_once __DIR__ . '/../DAO/PersonaDAO.php';
-        require_once __DIR__ . '/../DAO/ReservaDAO.php';
+        require_once __DIR__ . '/../DAO/personaDAO.php';
+        require_once __DIR__ . '/../DAO/reservaDAO.php';
         require_once __DIR__ . '/../DAO/habitacionDAO.php';
 
         // Validar rango de reserva
@@ -258,9 +258,9 @@ class ReservaController extends Controller {
         }
 
         $conn = Database::getInstance();
-        require_once __DIR__ . '/../DAO/ReservaDAO.php';
+        require_once __DIR__ . '/../DAO/reservaDAO.php';
         require_once __DIR__ . '/../DAO/habitacionDAO.php';
-        require_once __DIR__ . '/../DAO/PersonaDAO.php';
+        require_once __DIR__ . '/../DAO/personaDAO.php';
 
         $reservaDAO = new ReservaDAO($conn);
         $habitacionDAO = new HabitacionDAO($conn);

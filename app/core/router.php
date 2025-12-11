@@ -3,7 +3,7 @@
 require_once __DIR__ . "/controller.php";
 require_once __DIR__ . "/../controllers/homeController.php";
 require_once __DIR__ . "/../controllers/authController.php";
-require_once __DIR__ . "/../controllers/habitacionController.php";
+require_once __DIR__ . "/../controllers/HabitacionController.php";
 require_once __DIR__ . "/../controllers/reservaController.php";
 require_once __DIR__ . "/../controllers/AdminController.php";
 
