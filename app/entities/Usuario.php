@@ -6,4 +6,3 @@ class Usuario {
     public $rol;
     public $activo;
 }
-?>

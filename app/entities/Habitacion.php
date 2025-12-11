@@ -9,4 +9,3 @@ class Habitacion {
     public $imagen;
 }
 
-?>

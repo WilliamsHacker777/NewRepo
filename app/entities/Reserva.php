@@ -11,4 +11,3 @@ class Reserva {
     public $payment_status;
     public $payment_receipt;
 }
-?>
