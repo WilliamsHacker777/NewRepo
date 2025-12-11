@@ -94,6 +94,12 @@ class AdminController extends Controller {
         require_once __DIR__ . '/../entities/Habitacion.php';
         $habitacionDAO = new HabitacionDAO($conn);
 
+        // Validar duplicado
+        if ($habitacionDAO->existeNumero($numero)) {
+            $this->render('admin/error', ['mensaje' => 'El número de habitación ya existe']);
+            return;
+        }
+
         $habitacion = new Habitacion();
         $habitacion->numero = $numero;
         $habitacion->tipo = $tipo;
@@ -165,6 +171,13 @@ class AdminController extends Controller {
 
         $conn = Database::getInstance();
         $habitacionDAO = new HabitacionDAO($conn);
+
+        // Validar duplicado
+        if ($habitacionDAO->existeNumero($numero, $id)) {
+            $this->render('admin/error', ['mensaje' => 'El número de habitación ya existe']);
+            return;
+        }
+
         $habitacion = $habitacionDAO->findById($id);
 
         if (!$habitacion) {
