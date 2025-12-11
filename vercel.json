@@ -1,0 +1,12 @@
+{
+    "rewrites": [
+        {
+            "source": "/(css|js|img|uploads)/(.*)",
+            "destination": "/public/$1/$2"
+        },
+        {
+            "source": "/(.*)",
+            "destination": "/api/index.php"
+        }
+    ]
+}

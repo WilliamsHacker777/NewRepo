@@ -1,9 +1,9 @@
 <?php
+// api/index.php - Vercel Entry Point
 session_start();
 
-// 1. Cargar router antes de instanciarlo
+// Adjust path to reach app/core/router.php from api/
 require_once __DIR__ . '/../app/core/router.php';
 
-// 2. Ejecutar enrutador
 $router = new Router();
 $router->handle();
