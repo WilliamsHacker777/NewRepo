@@ -1,7 +1,7 @@
 <?php
 
-require_once __DIR__ . '/../DAO/ReservaDAO.php';
-require_once __DIR__ . '/../DAO/HabitacionDAO.php';
+require_once __DIR__ . '/../DAO/reservaDAO.php';
+require_once __DIR__ . '/../DAO/habitacionDAO.php';
 require_once __DIR__ . '/../entities/Reserva.php';
 
 class ReservaService {
